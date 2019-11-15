@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"(cd server && npm run develop) & (cd frontend && gatsby develop)"
+    "server":"cd server && npm run develop",
+    "develop":"cd frontend && gatsby clean && gatsby develop",
+    "start":"npm run server & npm run develop",
+    "clean":"cd frontend && gatsby clean",
+    "setup":"cd frontend && gatsby clean && gatsby build",
+    "build":"npm run server & npm run setup"
   },
   "repository": {
     "type": "git",
