@@ -1,17 +1,10 @@
 import React from "react"
 import Layout from "../components/layout"
+import Services from '../components/Services/Services'
 const courses = () => {
   return (
     <Layout>
-      <h1
-        style={{
-          textAlign: "center",
-          textTransform: "capitalize",
-          marginTop: "4rem",
-        }}
-      >
-        courses page
-      </h1>
+      <Services></Services>
     </Layout>
   )
 }
